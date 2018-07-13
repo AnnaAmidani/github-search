@@ -1,3 +1,12 @@
-<p>
-  repos works!
-</p>
+<h3>Popular repositories</h3>
+
+<ul>
+  <li *ngFor="let repo of repos$">
+    <a routerLink="/details/{{repo.name}}">{{ repo.name }}</a>
+
+    <ul>
+      <li>{{ repo.path }}</li>
+      <li><a href="http://{{ repo.html_url }}">{{ repo.html_url }}</a></li>
+    </ul>
+  </li>
+</ul>
