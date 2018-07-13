@@ -5,7 +5,7 @@ import { ReposComponent } from './repos/repos.component';
 
 const routes: Routes = [
   {
-    path: 'posts',
+    path: '',
     component: ReposComponent
   }
 ];
