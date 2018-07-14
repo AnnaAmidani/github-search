@@ -1,12 +1,13 @@
-<h3>Popular repositories</h3>
+<div class="repo">
+  <h3>Popular repositories <img src="./assets/blue-star-star-md.png"/></h3> 
+</div>
 
 <ul>
   <li *ngFor="let repo of repos$">
-    <a routerLink="/details/{{repo.name}}">{{ repo.name }}</a>
-
+    <a href="{{ repo.html_url }}">{{ repo.name }}</a>
     <ul>
-      <li>{{ repo.path }}</li>
-      <li><a href="http://{{ repo.html_url }}">{{ repo.html_url }}</a></li>
+      <li>{{ repo.repository.description }}</li>
+      <li><a href="{{ repo.html_url }}">{{ repo.html_url }}</a></li>
     </ul>
   </li>
 </ul>

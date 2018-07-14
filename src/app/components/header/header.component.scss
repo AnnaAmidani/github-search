@@ -1,7 +1,11 @@
-.gst-header {
-    color: #454645;
+.header {
+    background: #2d2e2e;
     text-align: right;
-    background: #D0D0D0;
+    color: #fff;
     height: 10%;
-    padding: 10px 40px 20px 20px;
+    padding: 5px 55px 5px 50px;
+
+    img {
+        width: 30px;
+    }
 }
