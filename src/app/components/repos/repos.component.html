@@ -1,12 +1,12 @@
 <div class="repo">
-  <h3>Popular repositories <img src="./assets/blue-star-star-md.png"/></h3> 
+  <h2>Popular repositories <img src="./assets/blue-star-star-md.png"/></h2> 
 </div>
 
 <ul>
   <li *ngFor="let repo of repos$">
     <a href="{{ repo.html_url }}">{{ repo.name }}</a>
     <ul>
-      <li>{{ repo.repository.description }}</li>
+      <li>{{ repo.description }}</li>
       <li><a href="{{ repo.html_url }}">{{ repo.html_url }}</a></li>
     </ul>
   </li>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { SearchdataService } from '../../services/searchdata.service';
+import { SearchService } from '../../services/search.service';
+import { Repo } from '../model/Repo';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -10,9 +11,9 @@ import { Observable } from 'rxjs';
 })
 export class ReposComponent implements OnInit {
 
-  repos$: Object;
+  repos$: Repo;
 
-  constructor(private searchdata: SearchdataService) { }
+  constructor(private searchdata: SearchService) { }
 
   ngOnInit() {
     this.searchdata.getRepos().subscribe(

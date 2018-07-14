@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { ReposComponent } from './components/repos/repos.component';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -17,7 +16,6 @@ import { SearchComponent } from './components/search/search.component';
     AppComponent,
     SidebarComponent,
     HeaderComponent,
-    FooterComponent,
     ReposComponent,
     SearchComponent
   ],
