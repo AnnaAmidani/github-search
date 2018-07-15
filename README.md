@@ -9,25 +9,34 @@ This project makes use of Angular CLI (https://github.com/angular/angular-cli) v
 ```
 git clone https://github.com/AnnaAmidani/github-search.git
 cd github-search
-npm install @angular/cli
 ```
 
-Run `ng serve` for a dev server (or `npm run-script start`).
-Navigate to `http://localhost:4200/`. 
+If you install angular CLI globally, you can use:
+
+```
+cd github-search
+npm -g install @angular/cli
+ng serve
+```
+
+Alternatively, if you install it locally to the project you can use:
+```
+cd github-search
+npm install @angular/cli
+npm run-script start
+```
+
+FInd the dev server at `http://localhost:4200/`. 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` or `npm run-script build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running lint
 
-Run `ng lint` to execute the linting of your code via [tsLint](https://palantir.github.io/tslint/).
+Run `ng lint` or `npm run-script lint` to execute the linting of your code via [tsLint](https://palantir.github.io/tslint/).
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng test` or `npm run-script test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
