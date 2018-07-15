@@ -11,7 +11,7 @@ git clone https://github.com/AnnaAmidani/github-search.git
 cd github-search
 ```
 
-If you install angular CLI globally, you can use:
+If you install angular CLI globally, you can use ng command:
 
 ```
 cd github-search
@@ -19,10 +19,9 @@ npm -g install @angular/cli
 ng serve
 ```
 
-Alternatively, if you install it locally to the project you can use:
+Alternatively, you can use npm:
 ```
 cd github-search
-npm install @angular/cli
 npm run-script start
 ```
 
