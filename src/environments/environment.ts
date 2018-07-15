@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  searchApi: 'https://api.github.com/search'
+  searchApi: 'https://api.github.com/search',
+  repoPath: '/repositories',
+  codePath: '/code',
 };
 
 /*
