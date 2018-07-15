@@ -1,0 +1,38 @@
+<div class="search-content">
+    <h2>Search <img src="./assets/blue-star-star-md.png"/></h2>
+
+    <form  [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+        <div>
+            <mat-form-field
+                [hideRequiredMarker]="searchForm.value.hideRequired"
+                [floatLabel]="searchForm.value.floatLabel">
+                <input matInput class="form-control" formControlName="keyword" id="keyword" placeholder="Keyword" required>
+            </mat-form-field>
+        </div>    
+        <div>
+            <mat-form-field 
+                [hideRequiredMarker]="searchForm.value.hideRequired"
+                [floatLabel]="searchForm.value.floatLabel">
+                <mat-select class="form-control" formControlName="language" id="language" placeholder="Language">
+                    <mat-option *ngFor="let lang of languages" [value]="lang">
+                    {{ lang }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>    
+
+        <!--[disabled] = "!searchForm.valid" -->
+        <button type="submit" mat-raised-button color="primary">Go!</button>
+    </form>
+
+    <ul>
+        <li *ngFor="let repo of repoRes$">
+            <a href="{{ repo.html_url }}">{{ repo.name }}</a>
+            <ul>
+                <li>{{ repo.description }}</li>
+                <li><a href="{{ repo.html_url }}">{{ repo.html_url }}</a></li>
+            </ul>
+        </li>
+    </ul>
+          
+</div>

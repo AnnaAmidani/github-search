@@ -1,7 +1,12 @@
-<div id="parent-container">
-  <app-sidebar></app-sidebar>
-  <div id="content">
-    <app-header></app-header>
-    <router-outlet></router-outlet>
-  </div>
+<div class="header-container">
+  <app-header></app-header>
+</div>
+  
+<div class="main-container">
+    <div class="row">
+        <div class="col-md-1"><app-sidebar></app-sidebar></div>
+        <div class="col-md-6"><app-search></app-search></div>
+        <div class="col-md-5"><app-repos></app-repos></div>
+<!--        <div class="col-md-5"><router-outlet></router-outlet></div>  -->
+    </div>
 </div>

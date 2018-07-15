@@ -1,0 +1,14 @@
+<nav>
+  <ul>
+    <li>
+      <a routerLink="repos" [class.activated]="currentUrl == '/repos'">
+        <i class="material-icons">home</i>
+      </a>
+    </li>
+    <li>
+        <a routerLink="search" [class.activated]="currentUrl == '/search'">
+          <i class="material-icons">favorite</i>
+        </a>
+      </li>
+  </ul>
+</nav>
