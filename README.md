@@ -1,12 +1,19 @@
 # Github search tool
 
-Web Gui for searching through repositories hosted on GitHub using features like search by topic, search in code, plus many others advanced filters.
+Web Gui for searching through repositories hosted on GitHub using features like search by keyword, topic, search in code, and others advanced filters.
 
 This project makes use of Angular CLI (https://github.com/angular/angular-cli) version 6.0.8, and talks to the GitHub search API version 3 (https://developer.github.com/v3/search/).
 
-## Development server
+## Build and run instructions
+(Min requirement Node 9 and Npm 5.5)
+```
+git clone https://github.com/AnnaAmidani/github-search.git
+cd github-search
+npm install @angular/cli
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server (or `npm run-script start`).
+Navigate to `http://localhost:4200/`. 
 
 ## Build
 
