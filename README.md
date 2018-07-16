@@ -22,6 +22,7 @@ ng serve
 Alternatively, you can use npm:
 ```
 cd github-search
+npm install
 npm run-script start
 ```
 
